@@ -1,0 +1,17 @@
+{
+  "name": "alevgal/cgp-test",
+  "description": "Test plugin for CGP",
+  "keywords": ["wordpress", "plugin", "cgp"],
+  "homepage": "https://cgp.alexgal.info",
+  "authors": [
+    {
+      "name": "Aleksey Galkevych",
+      "email": "evpatij76@gmail.com",
+      "homepage": "https://cgp.alexgal.info/"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "composer/installers": "2.0.0"
+  }
+}
