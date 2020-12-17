@@ -8,7 +8,7 @@ const { __ } = wp.i18n;
 ready(() => {
     //Check if user is logged in
     const loggedIn = document.body.classList.contains( 'logged-in' );
-    const links = document.querySelectorAll('a');
+    const links = document.querySelectorAll('a, button');
 
     let linkClicked = false,
         linkClickedTime = 0;
