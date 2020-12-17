@@ -58,7 +58,7 @@ class Init {
 		add_filter('plugin_action_links_' .plugin_basename(CGP_PLUGIN_FILE), function ( $links ) {
 			$links[] = sprintf(
 				'<a href="%s">%s</a>',
-				add_query_arg(['page' => 'wc-settings', 'tab' => 'cgi-test'], admin_url('admin.php')),
+				add_query_arg(['page' => 'wc-settings', 'tab' => 'setting_cgi_test'], admin_url('admin.php')),
 				__('Settings')
 			);
 			return $links;
