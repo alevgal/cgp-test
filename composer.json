@@ -13,5 +13,10 @@
   "type": "wordpress-plugin",
   "require": {
     "composer/installers": "^1.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "CGP\\": "lib/"
+    }
   }
 }
