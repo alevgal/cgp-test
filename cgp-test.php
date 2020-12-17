@@ -21,7 +21,7 @@ if (!file_exists($composer = CGP_PLUGIN_DIR . '/vendor/autoload.php')) {
 	wp_die( sprintf(
 		"<h1>%s</h1><p>%s</p>",
 		__("CGP Error"),
-		__('You must run <code>composer install</code> from plugin directory'),
+		__('You must run <code>composer install</code> from plugin directory')
 	), "CGI Error" );
 }
 require_once $composer;
