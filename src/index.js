@@ -13,16 +13,15 @@ ready(() => {
     let linkClicked = false,
         linkClickedTime = 0;
 
-    links.forEach(link => {
-        link.addEventListener('click', (e)  => {
+    window.addEventListener('click', (event) => {
+        if(event && event.target && ['A', 'BUTTON'].includes(event.target.nodeName)) {
             linkClicked = true;
             linkClickedTime = new Date().getTime();
-        })
-
+        }
     });
 
     //check if user is logged in and do not have returned discount
-    if( !loggedIn || 'true' !== window.localStorage.getItem('applyDiscount') ) {
+    if( !loggedIn && 'true' !== window.localStorage.getItem('applyDiscount') ) {
 
         const showDiscountDialog  = () => {
           const dialog = document.createElement('div');
